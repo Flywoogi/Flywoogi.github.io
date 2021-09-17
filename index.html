@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            text-align: center;
+            line-height: 300px;
+            font-size: 1.5rem;
+            color: #00ff22;
+        }
+        .slide {
+            height: 300px;
+            overflow: hidden;
+        }
+        .slide ul {
+            width: calc(100% * 4);
+            animation: slide 8s infinite;
+        }
+        .slide li {
+            width: calc(100%/4);
+            height: 300px;
+        }
+        .slide li:nth-child(1) {
+            background: url(./imgs/v1.jpg);
+        }
+        .slide li:nth-child(2) {
+            background: url(./imgs/v2.jpg);
+        }
+        .slide li:nth-child(3) {
+            background: url(./imgs/v3.jpg);
+        }
+        .slide li:nth-child(4) {
+            background: url(./imgs/v4.png);
+        }
+        @keyframes slide {
+            0% {margin-top: 0px;}
+            10% {margin-top: 0px;}
+            25% {margin-top: -300px;}
+            35% {margin-top: -300px;}
+            50% {margin-top: -600px;}
+            60% {margin-top: -600px;}
+            75% {margin-top: -900px;}
+            85% {margin-top: -900px;}
+            100% {margin-top: 0px;}
+        }
+    </style>
+</head>
+<body>
+<div class="slide">
+    <ul>
+        <li>안녕하세요</li>
+        <li>저는</li>
+        <li>하동욱</li>
+        <li>입니다</li>
+    </ul>
+</div>
+</body>
+</html>
